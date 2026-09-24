@@ -3,6 +3,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { BreadsModule } from './breads/breads.module';
+import { BreadsTypesModule } from './breads-types/breads-types.module';
+import { BreadsCategoryModule } from './breads-category/breads-category.module';
 
 @Module({
   imports: [
@@ -20,6 +23,9 @@ import { AppService } from './app.service';
         synchronize: false,
       }),
     }),
+    BreadsModule,
+    BreadsTypesModule,
+    BreadsCategoryModule,
   ],
   controllers: [AppController],
   providers: [AppService],
