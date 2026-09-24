@@ -10,6 +10,7 @@ import { ProductsCategotyModule } from './products-categoty/products-categoty.mo
 import { ProductsModule } from './products/products.module';
 import { DistributorsModule } from './distributors/distributors.module';
 import { UsersModule } from './users/users.module';
+import { LocationsModule } from './locations/locations.module';
 
 @Module({
   imports: [
@@ -34,6 +35,7 @@ import { UsersModule } from './users/users.module';
     ProductsModule,
     DistributorsModule,
     UsersModule,
+    LocationsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
