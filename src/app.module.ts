@@ -6,6 +6,10 @@ import { AppService } from './app.service';
 import { BreadsModule } from './breads/breads.module';
 import { BreadsTypesModule } from './breads-types/breads-types.module';
 import { BreadsCategoryModule } from './breads-category/breads-category.module';
+import { ProductsCategotyModule } from './products-categoty/products-categoty.module';
+import { ProductsModule } from './products/products.module';
+import { DistributorsModule } from './distributors/distributors.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -26,6 +30,10 @@ import { BreadsCategoryModule } from './breads-category/breads-category.module';
     BreadsModule,
     BreadsTypesModule,
     BreadsCategoryModule,
+    ProductsCategotyModule,
+    ProductsModule,
+    DistributorsModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
